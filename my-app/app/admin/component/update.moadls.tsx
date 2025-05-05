@@ -23,7 +23,7 @@ function UpdateModal(props: iUpdate) {
   }, [post]);
 
   const handleSubmit = () => {
-    fetch(`http://localhost:9000/pizza/${post?.id}`, {
+    fetch(`https://be-friedking.onrender.com/pizza/${post?.id}`, {
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",

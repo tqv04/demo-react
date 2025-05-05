@@ -23,7 +23,7 @@ function CateUpdateModal(props: iUpdate) {
     }
   }, [post]);
   const handleSubmit = () => {
-    fetch(`http://localhost:9000/categories/${post?.id}`, {
+    fetch(`https://be-friedking.onrender.com/categories/${post?.id}`, {
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",

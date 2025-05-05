@@ -14,7 +14,7 @@ function CateModal(props: iShow) {
   const [quanity, setQuanity] = useState<string>("");
   const [imageUrl, setImage] = useState<string>("");
   const handleSubmit = () => {
-    fetch("http://localhost:9000/categories", {
+    fetch("https://be-friedking.onrender.com/categories", {
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",

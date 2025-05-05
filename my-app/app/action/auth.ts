@@ -18,7 +18,7 @@ export async function Signup(state: FormState, formData: FormData) {
   const { name, email, password } = validatedFields.data;
 
   try {
-    const res = await fetch("http://localhost:9000/users", {
+    const res = await fetch("https://be-friedking.onrender.com/users", {
       method: "POST",
       headers: {
         Accept: "application/json, text/plain, */*",
@@ -60,7 +60,7 @@ export async function Login(state: any, formData: FormData) {
   }
 
   try {
-    const res = await fetch("http://localhost:9000/login", {
+    const res = await fetch("https://be-friedking.onrender.com/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

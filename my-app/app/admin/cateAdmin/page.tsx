@@ -23,7 +23,7 @@ export default function CategoryAdmin() {
     setShowUpdateModal(true);
   };
   const handleDelete = (id: number) => {
-    fetch(`http://localhost:9000/category/${id}`, {
+    fetch(`https://be-friedking.onrender.com/categories/${id}`, {
       method: "DELETE",
     })
       .then((res) => {
@@ -50,7 +50,9 @@ export default function CategoryAdmin() {
   const [Pizza, setPost] = useState<PizzaType[]>([]);
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch("http://localhost:9000/category");
+      const response = await fetch(
+        "https://be-friedking.onrender.com/categories"
+      );
       const data = await response.json();
       console.log("data:", data);
       setPost(data);

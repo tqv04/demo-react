@@ -14,7 +14,7 @@ function Modals(props: iShow) {
   const [price, setPrice] = useState<string>("");
   const [imageUrl, setImage] = useState<string>("");
   const handleSubmit = () => {
-    fetch("http://localhost:9000/pizza", {
+    fetch("https://be-friedking.onrender.com/pizza", {
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",

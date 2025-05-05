@@ -32,7 +32,7 @@ export default function ProductAdmin() {
     setShowUpdateModal(true);
   };
   const handleDelete = (id: number) => {
-    fetch(`http://localhost:9000/pizza/${id}`, {
+    fetch(`https://be-friedking.onrender.com/pizza/${id}`, {
       method: "DELETE",
     })
       .then((res) => {
@@ -53,7 +53,7 @@ export default function ProductAdmin() {
   const [Pizza, setPost] = useState<PizzaType[]>([]);
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch("http://localhost:9000/pizza");
+      const response = await fetch("https://be-friedking.onrender.com/pizza");
       const data = await response.json();
       console.log("data:", data);
       setPost(data);
