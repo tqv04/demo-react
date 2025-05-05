@@ -24,7 +24,7 @@ const PostDetail = ({ params }: { params: Promise<{ id: string }> }) => {
   const fetcher: Fetcher<PizzaType, string> = (url) =>
     fetch(url).then((res) => res.json());
   const { data, error, isLoading } = useSWR(
-    `http://localhost:9000/pizza/${id}`,
+    `https://be-friedking.onrender.com/pizza/${id}`,
     fetcher,
     {
       revalidateIfStale: false,

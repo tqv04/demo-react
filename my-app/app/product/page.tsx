@@ -25,7 +25,7 @@ export default function Product() {
   const [Pizza, setPost] = useState<PizzaType[]>([]);
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch("http://localhost:9000/pizza");
+      const response = await fetch("https://be-friedking.onrender.com/pizza");
       const data = await response.json();
       console.log("data:", data);
       setPost(data);
