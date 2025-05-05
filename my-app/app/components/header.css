@@ -1,0 +1,57 @@
+.custom-dropdown .dropdown-toggle::after {
+  color: white !important; 
+}
+.custom-dropdown .dropdown-menu {
+  background-color: #2B3035;
+}
+
+.custom-dropdown .dropdown-item {
+  color: white !important; 
+}
+
+.custom-dropdown .dropdown-item:hover {
+  background-color: #252a2e !important; 
+  color: #86b7fe !important;
+}
+
+.navbar-custom {
+  background-color: #2b3035;
+}
+.navbar-brand {
+  font-size: 22px;
+  font-weight: bold;
+}
+.navbar-brand:hover {
+  color: #86b7fe !important;
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 15px;
+}
+.nav-link {
+  color: white !important;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+color: #86b7fe !important;
+}
+.btnSearch:hover{
+  color: #86b7fe !important;
+}
+.navbar-icons {
+  display: flex;
+  align-items: center;
+}
+ .fa-icon {
+  color: white;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+ .fa-icon:hover {
+  color: #86b7fe !important;
+  cursor: pointer;
+}

@@ -1,0 +1,9 @@
+
+
+footer a {
+  transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+  color: #f8d210 !important;
+}
