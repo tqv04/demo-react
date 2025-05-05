@@ -2,7 +2,7 @@ import Link from "next/link";
 import Product from "./product/page";
 import Image from "react-bootstrap/Image";
 import Container from "react-bootstrap/Container";
-import Post from "./post/page";
+
 export default async function Home() {
   return (
     <>
